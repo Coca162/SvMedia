@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 540.35743 350.78205"
+   version="1.1"
+   id="svg31"
+   width="540.35742"
+   height="350.78204">
+  <metadata
+     id="metadata35">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs7">
+    <style
+       id="style2">
+      .cls-1, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #141426;
+      }
+
+      .cls-3 {
+        fill: #ec2e25;
+      }
+
+      .cls-4, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-6 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 36.61588px;
+      }
+
+      .cls-7 {
+        opacity: 0.03;
+      }
+    </style>
+    <clipPath
+       id="clip-path"
+       transform="translate(9.96862 15.35602)">
+      <rect
+         class="cls-1"
+         width="540.35742"
+         height="350.78201"
+         id="rect4"
+         x="0"
+         y="0" />
+    </clipPath>
+  </defs>
+  <g
+     id="Layer_2"
+     data-name="Layer 2"
+     transform="translate(-9.9686203,-15.356)">
+    <g
+       id="Layer_2-2"
+       data-name="Layer 2">
+      <g
+         id="g27">
+        <rect
+           class="cls-2"
+           x="9.9686203"
+           y="15.35602"
+           width="540.35742"
+           height="350.78201"
+           id="rect9" />
+        <polygon
+           class="cls-3"
+           points="9.969,366.138 550.326,15.356 9.969,15.356 "
+           id="polygon11" />
+        <path
+           class="cls-4"
+           d="m 13.17449,350.782 q 51.41849,-33.369 102.837,-66.73823 18.19382,9.96958 36.38762,19.93919 l 37.98176,-22.38217 h 31.87767 l 51.547,-28.48665 25.77346,18.31293 c 0,0 59.68587,0 63.07709,0.67837 3.39122,0.6781 56.97284,34.59047 59.68587,36.62516 50.94808,38.208 118.0208,42.03451 118.01542,42.05142 H 13.17449 Z"
+           transform="translate(9.96862,15.35602)"
+           id="path13" />
+        <g
+           class="cls-5"
+           clip-path="url(#clip-path)"
+           id="g17"
+           transform="translate(9.9686279,15.35602)">
+          <line
+             class="cls-6"
+             x1="9.9686203"
+             y1="366.13803"
+             x2="550.32605"
+             y2="15.35602"
+             id="line15" />
+        </g>
+        <g
+           id="g23">
+          <circle
+             class="cls-7"
+             cx="431.87341"
+             cy="248.16859"
+             r="27.638821"
+             id="circle19" />
+          <path
+             class="cls-4"
+             d="m 407.418,256.36678 a 27.638822,27.638822 0 1 1 28.8756,-47.13616 29.9962,29.9962 0 0 0 -28.8756,47.13616 z"
+             transform="translate(9.96862,15.35602)"
+             id="path21" />
+        </g>
+        <path
+           class="cls-4"
+           d="m 111.3814,65.65814 c -33.46505,4.31842 -35.21544,8.228 -14.38207,34.72138 -26.49336,-20.83337 -30.403,-19.083 -34.72139,14.38207 -4.31842,-33.46505 -8.228,-35.21544 -34.72138,-14.38207 20.83337,-26.49336 19.083,-30.403 -14.38207,-34.72138 33.46505,-4.31843 35.21544,-8.228 14.38207,-34.72139 26.49336,20.83337 30.403,19.083 34.72138,-14.38207 4.31843,33.46505 8.228,35.21544 34.72139,14.38207 C 76.166,57.43011 77.91635,61.33971 111.3814,65.65814 Z"
+           transform="translate(9.96862,15.35602)"
+           id="path25" />
+      </g>
+    </g>
+  </g>
+</svg>
