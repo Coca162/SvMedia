@@ -1,153 +1,330 @@
 {
     "Material_Groups": [
         {
-            "Name":"Crops",
+            "Name": "Crops",
             "Materials": [
                 {
-                    "Name":"Apple"
-                },
-                {
-                    "Name":"Banana"
-                },
-                {
-                    "Name":"Corn"
-                },
-                {
-                    "Name":"Wheat"
-                },
-                {
-                    "Name":"Rice"
-                }
-            ]
-        },
-        {
-            "Name":"Tier One Ores",
-			"Mine_Type": "Basic",
-            "Materials": [
-                {
-                    "Name":"Iron Ore",
-                    "Refineable":"true",
-                    "Refinery_Type":"Basic Ore Refinery",
-                    "Refined": [
+                    "Name": "Food",
+                    "Mine_Type": "Standard",
+                    "Mined": [
                         {
-                            "Count":"10",
-                            "Material":"Iron"
+                            "Count": "1",
+                            "Material": "Arable Land"
                         }
                     ]
                 },
                 {
-                    "Name":"Copper Ore"
-					"Refineable":"true",
-                    "Refinery_Type":"Basic Ore Refinery",
-                    "Refined": [
+                    "Name": "Cotton",
+                    "Mine_Type": "Standard",
+                    "Mined": [
                         {
-                            "Count":"9",
-                            "Material":"Copper"
+                            "Count": "1",
+                            "Material": "Arable Land"
                         }
                     ]
                 },
-				{
-                    "Name":"Quartz Ore"
-					"Refineable":"true",
-                    "Refinery_Type":"Basic Ore Refinery",
-                    "Refined": [
+                {
+                    "Name": "Lumber",
+                    "Mine_Type": "Standard",
+                    "Mined": [
                         {
-                            "Count":"8",
-                            "Material":"Quartz"
+                            "Count": "1",
+                            "Material": "Forest"
                         }
                     ]
                 }
             ]
         },
-		{
-			"Name": "Tier Two Ore",
-			"Mine_Type": "Enhanced",
-			"Materials": [
-				{
-                    "Name":"Aluminum Ore"
-					"Refineable":"true",
-                    "Refinery_Type":"Enhanced Ore Refinery",
-                    "Refined": [
-                        {
-                            "Count":"7",
-                            "Material":"Aluminum"
-                        }
-                    ]
-                },
-				{
-                    "Name":"Gold Ore"
-					"Refineable":"true",
-                    "Refinery_Type":"Enhanced Ore Refinery",
-                    "Refined": [
-                        {
-                            "Count":"5",
-                            "Material":"Gold"
-                        }
-                    ]
-                },
-				{
-                    "Name":"Lithium Ore"
-					"Refineable":"true",
-                    "Refinery_Type":"Enhanced Ore Refinery",
-                    "Refined": [
-                        {
-                            "Count":"4",
-                            "Material":"Lithium"
-                        }
-                    ]
-                }
-			]
-		},
-		{
-			"Name": "Tier Three Ore",
-			"Mine_Type": "Advanced",
-			"Materials": [
-				{
-                    "Name":"Platinum Ore"
-					"Refineable":"true",
-                    "Refinery_Type":"Enhanced Ore Refinery",
-                    "Refined": [
-                        {
-                            "Count":"3",
-                            "Material":"Platinum"
-                        }
-                    ]
-                },
-				{
-                    "Name":"Uranium Ore"
-					"Refineable":"true",
-                    "Refinery_Type":"Enhanced Ore Refinery",
-                    "Refined": [
-                        {
-                            "Count":"2",
-                            "Material":"Uranium"
-                        }
-                    ]
-                },
-				{
-                    "Name":"Crystallite Ore"
-					"Refineable":"true",
-                    "Refinery_Type":"Enhanced Ore Refinery",
-                    "Refined": [
-                        {
-                            "Count":"1",
-                            "Material":"Crystallite"
-                        }
-                    ]
-                }
-			]
-		},
         {
-            "Name":"Components",
+            "Name": "Ores",
             "Materials": [
                 {
-                    "Name":"Copper wire",
-                    "Produced":"true",
-                    "Factory_Type":"Standard Factory",
+                    "Name": "Iron Ore",
+                    "Mine_Type": "Standard",
+                    "Mined": [
+                        {
+                            "Count": "1",
+                            "Material": "Iron Deposit"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Copper Ore",
+                    "Mine_Type": "Standard",
+                    "Mined": [
+                        {
+                            "Count": "1",
+                            "Material": "Copper Deposit"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Quartz Ore",
+                    "Mine_Type": "Standard",
+                    "Mined": [
+                        {
+                            "Count": "1",
+                            "Material": "Quartz Deposit"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Water",
+                    "Mine_Type": "Standard",
+                    "Mined": [
+                        {
+                            "Count": "1",
+                            "Material": "Water Deposit"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Aluminum Ore",
+                    "Mine_Type": "Enhanced",
+                    "Mined": [
+                        {
+                            "Count": "1",
+                            "Material": "Aluminum Deposit"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Lithium Ore",
+                    "Mine_Type": "Enhanced",
+                    "Mined": [
+                        {
+                            "Count": "1",
+                            "Material": "Lithium Deposit"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Uranium Ore",
+                    "Mine_Type": "Standard",
+                    "Mined": [
+                        {
+                            "Count": "1",
+                            "Material": "Uranium Deposit"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Crystallite Ore",
+                    "Mine_Type": "Standard",
+                    "Mined": [
+                        {
+                            "Count": "1",
+                            "Material": "Crystallite Deposit"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Refined",
+            "Materials": [
+                {
+                    "Name": "Iron",
+                    "Refinery_Type": "Standard",
+                    "Refined": [
+                        {
+                            "Count": "1",
+                            "Material": "Iron Ore"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Copper",
+                    "Refinery_Type": "Standard",
+                    "Refined": [
+                        {
+                            "Count": "1",
+                            "Material": "Copper Ore"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Quartz",
+                    "Refinery_Type": "Standard",
+                    "Refined": [
+                        {
+                            "Count": "1",
+                            "Material": "Quartz Ore"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Aluminum",
+                    "Refinery_Type": "Enhanced",
+                    "Refined": [
+                        {
+                            "Count": "1",
+                            "Material": "Aluminum Ore"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Lithium",
+                    "Refinery_Type": "Enhanced",
+                    "Refined": [
+                        {
+                            "Count": "1",
+                            "Material": "Lithium Ore"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Uranium",
+                    "Refinery_Type": "Advanced",
+                    "Refined": [
+                        {
+                            "Count": "1",
+                            "Material": "Uranium Ore"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Crystallite",
+                    "Refinery_Type": "Advanced",
+                    "Refined": [
+                        {
+                            "Count": "1",
+                            "Material": "Crystallite Ore"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Hydrogen Fuel",
+                    "Refinery_Type": "Enhanced",
+                    "Refined": [
+                        {
+                            "Count": "1",
+                            "Material": "Water"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Silicon",
+                    "Refinery_Type": "Enhanced",
+                    "Refined": [
+                        {
+                            "Count": "1",
+                            "Material": "Quartz"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Carbon",
+                    "Refinery_Type": "Basic",
+                    "Refined": [
+                        {
+                            "Count": "1",
+                            "Material": "Lumber"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Components",
+            "Materials": [
+                {
+                    "Name": "Copper Wire",
+                    "Factory_Type": "Standard",
                     "Recipe": [
                         {
-                            "Count":"2",
-                            "Material":"Copper"
+                            "Count": "1",
+                            "Material": "Copper"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Textiles",
+                    "Factory_Type": "Standard",
+                    "Recipe": [
+                        {
+                            "Count": "1",
+                            "Material": "Cotton"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Computer Chip",
+                    "Factory_Type": "Standard",
+                    "Recipe": [
+                        {
+                            "Count": "1",
+                            "Material": "Copper Wire"
+                        },
+                        {
+                            "Count": "1",
+                            "Material": "Quartz"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Steel",
+                    "Factory_Type": "Enhanced",
+                    "Recipe": [
+                        {
+                            "Count": "1",
+                            "Material": "Iron"
+                        },
+                        {
+                            "Count": "1",
+                            "Material": "Carbon"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Plastic",
+                    "Factory_Type": "Enhanced",
+                    "Recipe": [
+                        {
+                            "Count": "1",
+                            "Material": "Food"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Electronics",
+                    "Factory_Type": "Enhanced",
+                    "Recipe": [
+                        {
+                            "Count": "1",
+                            "Material": "Silicon"
+                        },
+                        {
+                            "Count": "1",
+                            "Material": "Computer Chip"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Batteries",
+                    "Factory_Type": "Enhanced",
+                    "Recipe": [
+                        {
+                            "Count": "1",
+                            "Material": "Lithium"
+                        },
+                        {
+                            "Count": "1",
+                            "Material": "Silicon"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Computers",
+                    "Factory_Type": "Advanced",
+                    "Recipe": [
+                        {
+                            "Count": "1",
+                            "Material": "Electronics"
+                        },
+                        {
+                            "Count": "1",
+                            "Material": "Batteries"
                         }
                     ]
                 }
