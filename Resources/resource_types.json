@@ -1,189 +1,141 @@
 {
     "Recipes": [
-                {
-                    "Name": "Iron Refinement",
-                    "Inputs": {
-                        "Iron Ore": 1
-                    },
-                    "Outputs": {
-                        "Iron": 1
-                    },
-                    "ProcessingCost": 1
+        {
+            "Name": "Basic Metals",
+            "Materials": [
+                "Iron",
+                "Copper",
+                "Quartz",
+                "Aluminum",
+                "Lithium",
+                "Uranium",
+                "Crystallite"
+            ],
+            "Recipe Template": {
+                "Name": "$MATERIAL Processing",
+                "Inputs": {
+                    "$MATERIAL Ore": 1
                 },
-                {
-                    "Name": "Copper Refinement",
-                    "Inputs": {
-                        "Copper Ore": 1
-                    },
-                    "Outputs": {
-                        "Copper": 1
-                    },
-                    "ProcessingCost": 1
+                "Outputs": {
+                    "$MATERIAL": 1
                 },
-                {
-                    "Name": "Quartz Refinement",
-                    "Inputs": {
-                        "Quartz Ore": 1
-                    },
-                    "Outputs": {
-                        "Quartz": 1
-                    },
-                    "ProcessingCost": 1
-                },
-                {
-                    "Name": "Aluminum Refinement",
-                    "Inputs": {
-                        "Aluminum Ore": 1
-                    },
-                    "Outputs": {
-                        "Aluminum": 1
-                    },
-                    "ProcessingCost": 1
-                },
-                {
-                    "Name": "Lithium Refinement",
-                    "Inputs": {
-                        "Lithium Ore": 1
-                    },
-                    "Outputs": {
-                        "Lithium": 1
-                    },
-                    "ProcessingCost": 1
-                },
-                {
-                    "Name": "Uranium Refinement",
-                    "Inputs": {
-                        "Uranium Ore": 1
-                    },
-                    "Outputs": {
-                        "Uranium": 1
-                    },
-                    "ProcessingCost": 1
-                },
-                {
-                    "Name": "Crystallite Refinement",
-                    "Inputs": {
-                        "Crystallite Ore": 1
-                    },
-                    "Outputs": {
-                        "Crystallite": 1
-                    },
-                    "ProcessingCost": 1
-                },
-                {
-                    "Name": "Fuel Refinement",
-                    "Inputs": {
-                        "Oil": 1
-                    },
-                    "Outputs": {
-                        "Fuel": 1
-                    },
-                    "ProcessingCost": 1
-                },
-                {
-                    "Name": "Carbon Manufacturing",
-                    "Inputs": {
-                        "Lumber": 1
-                    },
-                    "Outputs": {
-                        "Carbon": 1
-                    },
-                    "ProcessingCost": 1
-                },
-                {
-                    "Name": "Textile Manufacturing",
-                    "Inputs": {
-                        "Cotton": 1
-                    },
-                    "Outputs": {
-                        "Textile": 1
-                    },
-                    "ProcessingCost": 1
-                },
-                {
-                    "Name": "Copper Wire Manufacturing",
-                    "Inputs": {
-                        "Copper": 1
-                    },
-                    "Outputs": {
-                        "Copper Wire": 1
-                    },
-                    "ProcessingCost": 1
-                },
-                {
-                    "Name": "Silicon Manufacturing",
-                    "Inputs": {
-                        "Quartz": 1
-                    },
-                    "Outputs": {
-                        "Silicon": 1
-                    },
-                    "ProcessingCost": 1
-                },
-                {
-                    "Name": "Computer Chip Manufacturing",
-                    "Inputs": {
-                        "Copper Wire": 1,
-                        "Quartz": 1
-                    },
-                    "Outputs": {
-                        "Computer Chip": 1
-                    },
-                    "ProcessingCost": 1
-                },
-                {
-                    "Name": "Steel Manufacturing",
-                    "Inputs": {
-                        "Carbon": 1,
-                        "Iron": 1
-                    },
-                    "Outputs": {
-                        "Steel": 1
-                    },
-                    "ProcessingCost": 1
-                },
-                {
-                    "Name": "Plastic Manufacturing",
-                    "Inputs": {
-                        "Oil": 1
-                    },
-                    "Outputs": {
-                        "Plastic": 1
-                    },
-                    "ProcessingCost": 1
-                },
-                {
-                    "Name": "Electronic Manufacturing",
-                    "Inputs": {
-                        "Silicon": 1,
-                        "Computer Chip": 1
-                    },
-                    "Outputs": {
-                        "Electronic": 1
-                    },
-                    "ProcessingCost": 1
-                },
-                {
-                    "Name": "Battery Manufacturing",
-                    "Inputs": {
-                        "Lithium": 1,
-                        "Silicon": 1
-                    },
-                    "Outputs": {
-                        "Battery": 1
-                    },
-                    "ProcessingCost": 1
-                },
-                {
-                    "Name": "Computer Manufacturing",
-                    "Inputs": {
-                        "Electronic": 1,
-                        "Battery": 1
-                    },
-                    "Outputs": {
-                        "Computer": 1
-                    },
-                    "ProcessingCost": 1
-                }
-            ]
+                "ProcessingCost": 1
+            }
+        },
+        {
+            "Name": "Fuel Refinement",
+            "Inputs": {
+                "Oil": 1
+            },
+            "Outputs": {
+                "Fuel": 1
+            },
+            "ProcessingCost": 1
+        },
+        {
+            "Name": "Carbon Manufacturing",
+            "Inputs": {
+                "Lumber": 1
+            },
+            "Outputs": {
+                "Carbon": 1
+            },
+            "ProcessingCost": 1
+        },
+        {
+            "Name": "Textile Manufacturing",
+            "Inputs": {
+                "Cotton": 1
+            },
+            "Outputs": {
+                "Textile": 1
+            },
+            "ProcessingCost": 1
+        },
+        {
+            "Name": "Copper Wire Manufacturing",
+            "Inputs": {
+                "Copper": 1
+            },
+            "Outputs": {
+                "Copper Wire": 1
+            },
+            "ProcessingCost": 1
+        },
+        {
+            "Name": "Silicon Manufacturing",
+            "Inputs": {
+                "Quartz": 1
+            },
+            "Outputs": {
+                "Silicon": 1
+            },
+            "ProcessingCost": 1
+        },
+        {
+            "Name": "Computer Chip Manufacturing",
+            "Inputs": {
+                "Copper Wire": 1,
+                "Quartz": 1
+            },
+            "Outputs": {
+                "Computer Chip": 1
+            },
+            "ProcessingCost": 1
+        },
+        {
+            "Name": "Steel Manufacturing",
+            "Inputs": {
+                "Carbon": 1,
+                "Iron": 1
+            },
+            "Outputs": {
+                "Steel": 1
+            },
+            "ProcessingCost": 1
+        },
+        {
+            "Name": "Plastic Manufacturing",
+            "Inputs": {
+                "Oil": 1
+            },
+            "Outputs": {
+                "Plastic": 1
+            },
+            "ProcessingCost": 1
+        },
+        {
+            "Name": "Electronic Manufacturing",
+            "Inputs": {
+                "Silicon": 1,
+                "Computer Chip": 1
+            },
+            "Outputs": {
+                "Electronic": 1
+            },
+            "ProcessingCost": 1
+        },
+        {
+            "Name": "Battery Manufacturing",
+            "Inputs": {
+                "Lithium": 1,
+                "Silicon": 1
+            },
+            "Outputs": {
+                "Battery": 1
+            },
+            "ProcessingCost": 1
+        },
+        {
+            "Name": "Computer Manufacturing",
+            "Inputs": {
+                "Electronic": 1,
+                "Battery": 1
+            },
+            "Outputs": {
+                "Computer": 1
+            },
+            "ProcessingCost": 1
+        }
+    ]
 }
