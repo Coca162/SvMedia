@@ -1,11 +1,10 @@
 {
     "Material_Groups": [
         {
-            "Name": "Crops",
+            "Name": "Field",
             "Materials": [
                 {
                     "Name": "Food",
-                    "Mine_Type": "Standard",
                     "Mined": [
                         {
                             "Count": "1",
@@ -15,7 +14,6 @@
                 },
                 {
                     "Name": "Cotton",
-                    "Mine_Type": "Standard",
                     "Mined": [
                         {
                             "Count": "1",
@@ -25,7 +23,6 @@
                 },
                 {
                     "Name": "Lumber",
-                    "Mine_Type": "Standard",
                     "Mined": [
                         {
                             "Count": "1",
@@ -36,11 +33,10 @@
             ]
         },
         {
-            "Name": "Ores",
+            "Name": "Mine",
             "Materials": [
                 {
                     "Name": "Iron Ore",
-                    "Mine_Type": "Standard",
                     "Mined": [
                         {
                             "Count": "1",
@@ -50,7 +46,6 @@
                 },
                 {
                     "Name": "Copper Ore",
-                    "Mine_Type": "Standard",
                     "Mined": [
                         {
                             "Count": "1",
@@ -60,7 +55,6 @@
                 },
                 {
                     "Name": "Quartz Ore",
-                    "Mine_Type": "Standard",
                     "Mined": [
                         {
                             "Count": "1",
@@ -69,18 +63,16 @@
                     ]
                 },
                 {
-                    "Name": "Water",
-                    "Mine_Type": "Standard",
+                    "Name": "Oil",
                     "Mined": [
                         {
                             "Count": "1",
-                            "Material": "Water Deposit"
+                            "Material": "Oil Deposit"
                         }
                     ]
                 },
                 {
                     "Name": "Aluminum Ore",
-                    "Mine_Type": "Enhanced",
                     "Mined": [
                         {
                             "Count": "1",
@@ -90,7 +82,6 @@
                 },
                 {
                     "Name": "Lithium Ore",
-                    "Mine_Type": "Enhanced",
                     "Mined": [
                         {
                             "Count": "1",
@@ -100,7 +91,6 @@
                 },
                 {
                     "Name": "Uranium Ore",
-                    "Mine_Type": "Standard",
                     "Mined": [
                         {
                             "Count": "1",
@@ -110,7 +100,6 @@
                 },
                 {
                     "Name": "Crystallite Ore",
-                    "Mine_Type": "Standard",
                     "Mined": [
                         {
                             "Count": "1",
@@ -121,212 +110,179 @@
             ]
         },
         {
-            "Name": "Refined",
+            "Name": "Refinery",
             "Materials": [
                 {
-                    "Name": "Iron",
-                    "Refinery_Type": "Standard",
-                    "Refined": [
-                        {
-                            "Count": "1",
-                            "Material": "Iron Ore"
-                        }
-                    ]
+                    "Id": "Iron",
+                    "Inputs": {
+                        "Iron Ore": 1
+                    },
+                    "Outputs": {
+                        "Iron": 1
+                    }
                 },
                 {
-                    "Name": "Copper",
-                    "Refinery_Type": "Standard",
-                    "Refined": [
-                        {
-                            "Count": "1",
-                            "Material": "Copper Ore"
-                        }
-                    ]
+                    "Id": "Copper",
+                    "Inputs": {
+                        "Copper Ore": 1
+                    },
+                    "Outputs": {
+                        "Copper": 1
+                    }
                 },
                 {
-                    "Name": "Quartz",
-                    "Refinery_Type": "Standard",
-                    "Refined": [
-                        {
-                            "Count": "1",
-                            "Material": "Quartz Ore"
-                        }
-                    ]
+                    "Id": "Quartz",
+                    "Inputs": {
+                        "Quartz Ore": 1
+                    },
+                    "Outputs": {
+                        "Quartz": 1
+                    }
                 },
                 {
-                    "Name": "Aluminum",
-                    "Refinery_Type": "Enhanced",
-                    "Refined": [
-                        {
-                            "Count": "1",
-                            "Material": "Aluminum Ore"
-                        }
-                    ]
+                    "Id": "Aluminum",
+                    "Inputs": {
+                        "Aluminum Ore": 1
+                    },
+                    "Outputs": {
+                        "Aluminum": 1
+                    }
                 },
                 {
-                    "Name": "Lithium",
-                    "Refinery_Type": "Enhanced",
-                    "Refined": [
-                        {
-                            "Count": "1",
-                            "Material": "Lithium Ore"
-                        }
-                    ]
+                    "Id": "Lithium",
+                    "Inputs": {
+                        "Lithium Ore": 1
+                    },
+                    "Outputs": {
+                        "Lithium": 1
+                    }
                 },
                 {
-                    "Name": "Uranium",
-                    "Refinery_Type": "Advanced",
-                    "Refined": [
-                        {
-                            "Count": "1",
-                            "Material": "Uranium Ore"
-                        }
-                    ]
+                    "Id": "Uranium",
+                    "Inputs": {
+                        "Uranium Ore": 1
+                    },
+                    "Outputs": {
+                        "Uranium": 1
+                    }
                 },
                 {
-                    "Name": "Crystallite",
-                    "Refinery_Type": "Advanced",
-                    "Refined": [
-                        {
-                            "Count": "1",
-                            "Material": "Crystallite Ore"
-                        }
-                    ]
+                    "Id": "Crystallite",
+                    "Inputs": {
+                        "Crystallite Ore": 1
+                    },
+                    "Outputs": {
+                        "Crystallite": 1
+                    }
                 },
                 {
-                    "Name": "Hydrogen Fuel",
-                    "Refinery_Type": "Enhanced",
-                    "Refined": [
-                        {
-                            "Count": "1",
-                            "Material": "Water"
-                        }
-                    ]
+                    "Id": "RefinedFuel",
+                    "Inputs": {
+                        "Oil": 1
+                    },
+                    "Outputs": {
+                        "Refined Fuel": 1
+                    }
                 },
                 {
-                    "Name": "Silicon",
-                    "Refinery_Type": "Enhanced",
-                    "Refined": [
-                        {
-                            "Count": "1",
-                            "Material": "Quartz"
-                        }
-                    ]
-                },
-                {
-                    "Name": "Carbon",
-                    "Refinery_Type": "Basic",
-                    "Refined": [
-                        {
-                            "Count": "1",
-                            "Material": "Lumber"
-                        }
-                    ]
+                    "Id": "Carbon",
+                    "Inputs": {
+                        "Lumber": 1
+                    },
+                    "Outputs": {
+                        "Carbon": 1
+                    }
                 }
             ]
         },
         {
-            "Name": "Components",
+            "Name": "Factory",
             "Materials": [
                 {
-                    "Name": "Copper Wire",
-                    "Factory_Type": "Standard",
-                    "Recipe": [
-                        {
-                            "Count": "1",
-                            "Material": "Copper"
-                        }
-                    ]
+                    "Id": "Textiles",
+                    "Inputs": {
+                        "Cotton": 1
+                    },
+                    "Outputs": {
+                        "Textiles": 1
+                    }
                 },
                 {
-                    "Name": "Textiles",
-                    "Factory_Type": "Standard",
-                    "Recipe": [
-                        {
-                            "Count": "1",
-                            "Material": "Cotton"
-                        }
-                    ]
+                    "Id": "CopperWire",
+                    "Inputs": {
+                        "Copper": 1
+                    },
+                    "Outputs": {
+                        "Copper Wire": 1
+                    }
                 },
                 {
-                    "Name": "Computer Chip",
-                    "Factory_Type": "Standard",
-                    "Recipe": [
-                        {
-                            "Count": "1",
-                            "Material": "Copper Wire"
-                        },
-                        {
-                            "Count": "1",
-                            "Material": "Quartz"
-                        }
-                    ]
+                    "Id": "Silicon",
+                    "Inputs": {
+                        "Quartz": 1
+                    },
+                    "Outputs": {
+                        "Silicon": 1
+                    }
                 },
                 {
-                    "Name": "Steel",
-                    "Factory_Type": "Enhanced",
-                    "Recipe": [
-                        {
-                            "Count": "1",
-                            "Material": "Iron"
-                        },
-                        {
-                            "Count": "1",
-                            "Material": "Carbon"
-                        }
-                    ]
+                    "Id": "ComputerChip",
+                    "Inputs": {
+                        "Copper Wire": 1,
+                        "Quartz": 1
+                    },
+                    "Outputs": {
+                        "Computer Chip": 1
+                    }
                 },
                 {
-                    "Name": "Plastic",
-                    "Factory_Type": "Enhanced",
-                    "Recipe": [
-                        {
-                            "Count": "1",
-                            "Material": "Food"
-                        }
-                    ]
+                    "Id": "Steel",
+                    "Inputs": {
+                        "Carbon": 1,
+                        "Iron": 1
+                    },
+                    "Outputs": {
+                        "Steel": 1
+                    }
                 },
                 {
-                    "Name": "Electronics",
-                    "Factory_Type": "Enhanced",
-                    "Recipe": [
-                        {
-                            "Count": "1",
-                            "Material": "Silicon"
-                        },
-                        {
-                            "Count": "1",
-                            "Material": "Computer Chip"
-                        }
-                    ]
+                    "Id": "Plastic",
+                    "Inputs": {
+                        "Oil": 1
+                    },
+                    "Outputs": {
+                        "Plastic": 1
+                    }
                 },
                 {
-                    "Name": "Batteries",
-                    "Factory_Type": "Enhanced",
-                    "Recipe": [
-                        {
-                            "Count": "1",
-                            "Material": "Lithium"
-                        },
-                        {
-                            "Count": "1",
-                            "Material": "Silicon"
-                        }
-                    ]
+                    "Id": "Electronic",
+                    "Inputs": {
+                        "Silicon": 1,
+                        "Computer Chip": 1
+                    },
+                    "Outputs": {
+                        "Electronic": 1
+                    }
                 },
                 {
-                    "Name": "Computers",
-                    "Factory_Type": "Advanced",
-                    "Recipe": [
-                        {
-                            "Count": "1",
-                            "Material": "Electronics"
-                        },
-                        {
-                            "Count": "1",
-                            "Material": "Batteries"
-                        }
-                    ]
+                    "Id": "Battery",
+                    "Inputs": {
+                        "Lithium": 1,
+                        "Silicon": 1
+                    },
+                    "Outputs": {
+                        "Battery": 1
+                    }
+                },
+                {
+                    "Id": "Computer",
+                    "Inputs": {
+                        "Electronic": 1,
+                        "Battery": 1
+                    },
+                    "Outputs": {
+                        "Computer": 1
+                    }
                 }
             ]
         }
